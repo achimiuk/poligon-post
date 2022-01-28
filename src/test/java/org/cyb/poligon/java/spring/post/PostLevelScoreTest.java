@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class PostLevelScoreTest {
 
   @Test
-  void should_return_SENIOR_as_max_scored_level() {
+  void should_return_JUNIOR_as_max_scored_level() {
     // given level scores 0,0,0
     final PostLevelScore postLevelScore = new PostLevelScore(0, 0, 0);
 
@@ -21,7 +21,7 @@ public class PostLevelScoreTest {
 
 
 
-    // then max scored level shoud be SENIOR
+    // then max scored level shoud be JUNIOR
     Assertions.assertEquals("JUNIOR", postLevelScore.getLevel());
 
   }
